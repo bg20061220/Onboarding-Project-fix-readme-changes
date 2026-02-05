@@ -62,6 +62,28 @@ Before you can do any video processing, you need to set up your environment and 
     ```bash
     pip install -r requirements.txt
     ```
+Note : Install FFmpeg on your system. The ffmpeg-python package is just a
+  wrapper that builds commands - it requires the actual FFmpeg binary         
+  installed on your machine.                                                  
+
+  Windows
+
+  # Using winget
+  winget install ffmpeg
+
+  # Or using chocolatey
+  choco install ffmpeg
+
+  macOS
+
+  brew install ffmpeg
+
+  Linux
+
+  sudo apt install ffmpeg
+  -Verify FFmpeg is installed correctly by running:
+  ffmpeg -version
+  - If it prints version info, you're good to go.
 
 6. Download the sample footage by running
     ```bash
